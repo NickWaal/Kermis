@@ -10,7 +10,7 @@ public class Kermis {
 	Attractie att = new Attractie();
 	Kassa k = new Kassa();
 	Monteur m = new Monteur();
-	
+
 	boolean draaien = true;
 
 	void starten() {

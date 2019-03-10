@@ -8,7 +8,7 @@ public class BotsAuto extends Attractie {
 
 	BotsAuto(String naam) {
 		this.naam = naam;
-	
+
 	}
 
 	void draaien() {

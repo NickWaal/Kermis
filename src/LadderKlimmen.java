@@ -13,7 +13,6 @@ public class LadderKlimmen extends Attractie implements GokAttractie {
 
 	}
 
-	
 //	public int kansSpelBelastingBetalen() {
 //		// 30% van je de omzet van LadderKlimmen betalen als kansspelbelasting
 //		int belasting = 0;
@@ -22,7 +21,7 @@ public class LadderKlimmen extends Attractie implements GokAttractie {
 //		return belasting;
 //		
 //	}
-	
+
 	void draaien() {
 		System.out.println("Ladderklimmen draait");
 		ladderKlimmenKaarten++;
@@ -33,7 +32,7 @@ public class LadderKlimmen extends Attractie implements GokAttractie {
 		System.out.println("totaal kaarten verkocht: " + totaalKaarten);
 		System.out.println("Omzet: " + omzet);
 		System.out.println("Draailimiet: " + draaiLimiet);
-		if(draaiLimiet == 15) {
+		if (draaiLimiet == 15) {
 			GokAttractie.kansSpelBelastingBetalen();
 			draaiLimiet = 0;
 			omzetNaBelasting = omzetNaBelasting + omzet;

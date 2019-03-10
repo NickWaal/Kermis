@@ -1,10 +1,8 @@
 
 public interface GokAttractie {
-	
-	
-	
-	public static void kansSpelBelastingBetalen(){
-		
+
+	public static void kansSpelBelastingBetalen() {
+
 		BelastingInspecteur bi = new BelastingInspecteur();
 		bi.belastingOphalen();
 	}

@@ -1,5 +1,5 @@
 
- public class Attractie {
+public class Attractie {
 
 	static int totaalKaarten;
 
@@ -12,7 +12,7 @@
 		totaalKaarten = BotsAuto.botsautoKaarten + Spin.spinKaarten + Hawaii.hawaiiKaarten
 				+ LadderKlimmen.ladderKlimmenKaarten + SpiegelPaleis.spiegelPaleisKaarten + SpookHuis.spookHuisKaarten;
 
-		System.out.println("Een overzicht van de totaal verkochte kaarten" + "\nen de verkochte kaarten per catagorie");
+		System.out.println("Een overzicht van de totaal verkochte kaarten" + "\nen de verkochte kaarten per categorie");
 		System.out.println("Totaal aantal kaarten: " + totaalKaarten);
 		System.out.println("Totaal aantal botsauto: " + BotsAuto.botsautoKaarten);
 		System.out.println("Totaal aantal spin: " + Spin.spinKaarten);

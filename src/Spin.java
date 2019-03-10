@@ -1,5 +1,5 @@
 
-public class Spin extends RisicoRijkeAttractie  {
+public class Spin extends RisicoRijkeAttractie {
 	String naam;
 	static double prijs = 2.25;
 	static double omzet;
@@ -13,22 +13,28 @@ public class Spin extends RisicoRijkeAttractie  {
 
 	}
 
-	void draaien() throws Exception {
-		if(b == false) {
-		opstellingsKeuring();
-		b =true;
-		}else{
-		System.out.println("De spin draait");
-		spinKaarten++;
-		totaalKaarten++;
-		draaiLimiet++;
-		omzet = omzet + prijs;
-		System.out.println("Draailimiet: " + draaiLimiet);
-		if(draaiLimiet == 5) {
-			System.out.println("De spin heeft een onderhoudsbeurt nodig");
-		}else if(draaiLimiet > 5) {
-			throw new Exception("De spin moet onderhouden worden. Stuur er een monteur naar toe");
+	void draaien() throws onderhoudException {
+		while (b == false) {
+			opstellingsKeuring();
+			b = true;
 		}
-	}
+
+		try {
+			if (draaiLimiet < 5) {
+				System.out.println("de Spin draait");
+				spinKaarten++;
+				totaalKaarten++;
+				draaiLimiet++;
+				omzet = omzet + prijs;
+				System.out.println("Draailimiet: " + draaiLimiet);
+
+			} else if (draaiLimiet == 5) {
+				throw new onderhoudException();
+			}
+		}
+
+		catch (onderhoudException s) {
+			System.err.println(s + " de " + naam + " heeft onderhoud nodig, stuur een monteur langs");
+		}
 	}
 }

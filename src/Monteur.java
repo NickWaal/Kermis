@@ -23,9 +23,8 @@ public class Monteur {
 			System.out.println("Onderhoud Hawaii");
 			Hawaii.draaiLimiet = 0;
 			break;
-		
+
 		}
-	
-	
-}
+
+	}
 }
